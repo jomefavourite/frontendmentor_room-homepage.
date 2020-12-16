@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Room homepage</title>
+  </head>
+  <body class="mx-auto">
+    <div id="mobileNav" class="hidden">
+      <nav
+        class="absolute w-full left-0 px-6 py-10 flex items-center justify-between lowercase font-semibold bg-white z-1000"
+      >
+        <img
+          class="block close"
+          src="./images/icon-close.svg"
+          alt="icon-close"
+        />
+        <ul class="flex">
+          <li>Home</li>
+          <li>Shop</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="bg-color3">
+      <div class="relative">
+        <div class="absolute left-0 right-0 flex px-6 pt-10 z-50">
+          <img
+            src="./images/icon-hamburger.svg"
+            alt="icon-hamburger"
+            class="ham md:hidden"
+          />
+          <img
+            class="block h-auto mx-auto md:mx-0"
+            src="./images/logo.svg"
+            alt="logo"
+          />
+
+          <ul class="hidden ml-12 md:flex text-white">
+            <li>Home</li>
+            <li>Shop</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <!-- md:h-height -->
+        <div class="swiper-container bg-cover relative md:h-height lg:h-auto">
+          <div class="swiper-wrapper">
+            <div id="img1" class="swiper-slide md:grid md:grid-cols-2">
+              <picture>
+                <source
+                  class="w-full h-full"
+                  media="(min-width:550px)"
+                  srcset="./images/desktop-image-hero-1.jpg"
+                />
+                <img
+                  src="./images/mobile-image-hero-1.jpg"
+                  class="w-full h-full object-cover"
+                />
+              </picture>
+
+              <div class="px-8 py-12 md:my-auto">
+                <h1 class="content__h1">
+                  Discover innovative ways to decorate
+                </h1>
+
+                <p class="content__p">
+                  We provide unmatched quality, comfort, and style for property
+                  owners across the country. Our experts combine form and
+                  function in bringing your vision to life. Create a room in
+                  your own style with our collection and make your property a
+                  reflection of you and what you love.
+                </p>
+                <button class="btn hover:text-color1">
+                  Shop now
+                  <span class="ml-8">
+                    <img src="./images/icon-arrow.svg" alt="icon-arrow" />
+                  </span>
+                </button>
+              </div>
+            </div>
+            <div id="img2" class="swiper-slide md:grid md:grid-cols-2">
+              <picture>
+                <source
+                  class="w-full h-full"
+                  media="(min-width:550px)"
+                  srcset="./images/desktop-image-hero-2.jpg"
+                />
+                <img
+                  src="./images/mobile-image-hero-2.jpg"
+                  class="w-full h-full object-cover"
+                />
+              </picture>
+
+              <div class="px-8 py-12">
+                <h1 class="content__h1">
+                  We are available all across the globe
+                </h1>
+
+                <p class="content__p">
+                  With stores all over the world, it's easy for you to find
+                  furniture for your home or place of business. Locally, we’re
+                  in most major cities throughout the country. Find the branch
+                  nearest you using our store locator. Any questions? Don't
+                  hesitate to contact us today.
+                </p>
+
+                <button class="btn hover:text-color1">
+                  Shop now
+                  <span class="ml-8">
+                    <img src="./images/icon-arrow.svg" alt="icon-arrow" />
+                  </span>
+                </button>
+              </div>
+            </div>
+            <div id="img3" class="swiper-slide md:grid md:grid-cols-2">
+              <picture>
+                <source
+                  class="w-full h-full"
+                  media="(min-width:550px)"
+                  srcset="./images/desktop-image-hero-3.jpg"
+                />
+                <img
+                  src="./images/mobile-image-hero-3.jpg"
+                  class="w-full h-full object-cover"
+                />
+              </picture>
+
+              <div class="px-8 py-12">
+                <h1 class="content__h1">
+                  Manufactured with the best materials
+                </h1>
+
+                <p class="content__p">
+                  Our modern furniture store provide a high level of quality.
+                  Our company has invested in advanced technology to ensure that
+                  every product is made as perfect and as consistent as
+                  possible. With three decades of experience in this industry,
+                  we understand what customers want for their home and office.
+                </p>
+
+                <button class="btn hover:text-color1">
+                  Shop now
+                  <span class="ml-8">
+                    <img src="./images/icon-arrow.svg" alt="icon-arrow" />
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="move">
+            <div
+              class="swiper-button-prev bg-color2 text-white p-6 left-auto"
+              id="prev"
+            ></div>
+            <div
+              class="swiper-button-next bg-color2 text-white p-6 right-0"
+              id="next"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hidden overlay"></div>
+
+    <div class="md:grid md:grid-cols-2 bg-color3 lg:grid-cols-3">
+      <div class="md:row-start-2 lg:row-start-1">
+        <img
+          class="w-full h-full"
+          src="./images/image-about-dark.jpg"
+          alt="image-about-dark"
+          class="h-full"
+        />
+      </div>
+
+      <div
+        class="px-8 py-12 md:col-span-2 md:row-start-1 md:row-end-2 lg:col-auto w-full"
+      >
+        <h3 class="text-sm uppercase font-bold tracking-widest md:text-1xl">
+          About our furniture
+        </h3>
+
+        <p class="text-color1 font-semibold mt-3">
+          Our multifunctional collection blends design and function to suit your
+          individual taste. Make each room unique, or pick a cohesive theme that
+          best express your interests and what inspires you. Find the furniture
+          pieces you need, from traditional to contemporary styles or anything
+          in between. Product specialists are available to help you create your
+          dream space.
+        </p>
+      </div>
+
+      <div class="md:row-start-2 lg:row-auto">
+        <img
+          class="w-full h-full"
+          src="./images/image-about-light.jpg"
+          alt="image-about-light"
+        />
+      </div>
+    </div>
+
+    <div class="attribution text-center text-xs mt-2">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Jome Favourite</a>.
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>
